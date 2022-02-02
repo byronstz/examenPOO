@@ -10,10 +10,10 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     QTranslator T;
     QStringList langs;
-    langs << "Español" <<"Italiano";
+    langs << "Español" <<"Hindi";
     const QString lang = QInputDialog::getItem(NULL,"Languaje", "Select a languaje", langs);
-    if (lang == "Italiano"){
-        T.load(":/italiano.qm");
+    if (lang == "Hindi"){
+        T.load(":/Hindi.qm");
     }
     if(lang != "Español"){
         a.installTranslator(&T);

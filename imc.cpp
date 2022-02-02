@@ -6,10 +6,8 @@
 #include <QSet>
 #include <QFile>
 #include <QDir>
-
-
 #include <QMessageBox>
-
+//iniciar y abrir datos de la aplicacion
 IMC::IMC(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::IMC)
@@ -18,12 +16,12 @@ IMC::IMC(QWidget *parent)
     iniciDat();
     abrD();
 }
-
+//borrar datos de IMC
 IMC::~IMC()
 {
     delete ui;
 }
-
+//declara datos a recibir en la aplicacion para IMC
 void IMC::almcnr()
 {
     QString fecha;
@@ -32,8 +30,9 @@ void IMC::almcnr()
     float imcdu[50];
 
     QDate date;
+//ingreso de fecha
     fecha = date.currentDate().toString("dd/MM/yyyy");
-
+//compara y suma datos del usuario
     for(int i=0; i<total; i++){
         pesodu[i] = usuario[i]->pesodu();
         alturadu[i] = usuario[i]->alturadu();
@@ -49,24 +48,28 @@ void IMC::almcnr()
         usuario[i]->calcular();
         im[i] = QString::number(usuario[i]->imcdu(), 'f', 2);
     }
+//archivo donde se almacenan los registros en la pc
     QString file = QDir::currentPath() + "C:/Users/Byron/Desktop/examenPOO/registro.txt";
     QFile archivo(file);
+//abrir y escribir en el archivo
     if(archivo.open(QFile::WriteOnly | QFile::Truncate)){
         for(int i=0; i<total; i++){
             QTextStream out(&archivo);
             out<<fecha<<"  ;"<<pesodu[i]<<"  ;"<<alturadu[i]<<"  ;"<<imcdu[i]<<" \n";
         }
+//muestra donde se guardara el archivo
         qDebug() << "Archivo guardado aqui: " << QDir::currentPath();
         archivo.close();
     }
 }
+//salida de datos en la grafica
 void IMC::iniciDat()
 {
-    QStringList cabecera = {"Fecha. Actual ", "Peso. Kg", "Altura .M ,Cm ", "'I.M.C'"};
+    QStringList cabecera = {"datos"};
     ui->outRegistro->setColumnCount(4);
     ui->outRegistro->setHorizontalHeaderLabels(cabecera);
 }
-
+//abrir el archivo para guardar datos
 void IMC::abrD()
 {
     QString nombre = QDir::currentPath() + "C:/Users/Byron/Desktop/examenPOO/registro.txt";
@@ -75,6 +78,7 @@ void IMC::abrD()
 
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
         return;
+//escribe los datos linea por linea
     QStringList datos;
     QTextStream in(&file);
     while (!in.atEnd()) {
@@ -86,7 +90,7 @@ void IMC::abrD()
         partes[i]= datos[i].split(";");
     }
     for(int i=0; i<datos.size(); i++){
-
+//salida de los datos del registro en la tabla
         ui->outRegistro->insertRow(i);
 
         ui->outRegistro->setItem(i,0, new QTableWidgetItem(partes[i][0]));
@@ -100,7 +104,7 @@ void IMC::abrD()
     }
     file.close();
 }
-void IMC::on_btnCalcular_clicked()
+void IMC::on_btnCalcular_click()
 {
     float peso = ui->inPeso->value();
     float altura = ui->inAltura->value();
@@ -144,6 +148,8 @@ void IMC::on_btnCalcular_clicked()
     QString min = QString::number(mas, 'f', 2);
     ui->outPmin->setText(min + " Kg.");
 
+
+//salida de la posicion sel grafico segun los datos anteriores
      ui->outRegistro->setRowCount(0);
     for(int i=0; i<total; i++){
         usuario[i]->calcular();

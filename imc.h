@@ -21,22 +21,13 @@ public:
 
 private slots:
 
-    void on_btnCalcular_clicked();
+    void on_btnCalcular_click();
 
 private:
     Ui::IMC *ui;
     calcularIndice *usuario[100];
     int total=0;
 
-    /**QBarSet *set0;
-    QBarSet *set1;
-    QBarSet *set2;
-    QBarSet *set3;
 
-    QHorizontalPercentBarSeries *series;
-    QChart *chart;
-    QBarCategoryAxis *categoryAxis;
-    QValueAxis *valueAxis;
-    QChartView *chartView;**/
 };
 #endif // IMC_H

@@ -28,6 +28,7 @@ calcularIndice::calcularIndice(QString ingrFecha, float pesodu, float alturadu)
     this->m_alturadu = alturadu;
     this->m_ingrFecha = ingrFecha;
 }
+//Indicador de IMC segun los resultados
 void calcularIndice::calcular()
 {
     {
@@ -44,6 +45,7 @@ void calcularIndice::calcular()
         }
     }
 }
+//mostrar los detalles del peso segun imc
 calcularIndice::calcularIndice(QObject *parent) : QObject(parent)
 {
     {
