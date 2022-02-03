@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/">
-        <file>IMC_hi.qm</file>
+    <qresource prefix="/new/prefix1">
+        <file>recursos/pesas.png</file>
     </qresource>
 </RCC>

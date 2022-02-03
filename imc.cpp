@@ -21,7 +21,7 @@ IMC::~IMC()
 {
     delete ui;
 }
-//declara datos a recibir en la aplicacion para IMC
+//declara datos de usuario a recibir en la aplicacion para IMC
 void IMC::almcnr()
 {
     QString fecha;
