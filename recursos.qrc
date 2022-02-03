@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>IMC_hi.qm</file>
+    </qresource>
+</RCC>

@@ -6,104 +6,104 @@
     <message>
         <location filename="imc.ui" line="14"/>
         <source>IMC</source>
-        <translation type="unfinished"></translation>
+        <translation>बीएमआई</translation>
     </message>
     <message>
         <location filename="imc.ui" line="41"/>
         <source>Datos del Usuario</source>
-        <translation type="unfinished"></translation>
+        <translation>उपयोगकर्ता का आधार - सामग्री</translation>
     </message>
     <message>
         <location filename="imc.ui" line="61"/>
         <source>Altura</source>
-        <translation type="unfinished"></translation>
+        <translation>कद</translation>
     </message>
     <message>
         <location filename="imc.ui" line="96"/>
         <source>Peso</source>
-        <translation type="unfinished"></translation>
+        <translation>वजन</translation>
     </message>
     <message>
         <location filename="imc.ui" line="132"/>
         <source>INGRESE LOS DATOS</source>
-        <translation type="unfinished"></translation>
+        <translation>डेटा दर्ज करें</translation>
     </message>
     <message>
         <location filename="imc.ui" line="161"/>
         <source>Grafico</source>
-        <translation type="unfinished"></translation>
+        <translation>ग्राफिक</translation>
     </message>
     <message>
         <location filename="imc.ui" line="186"/>
         <source>EXAMEN FINAL</source>
-        <translation type="unfinished"></translation>
+        <translation>आखरी परीक्षा</translation>
     </message>
     <message>
         <location filename="imc.ui" line="219"/>
         <source>Programa hecho por Byron Socasi...merezco un 10 inge :)</source>
-        <translation type="unfinished"></translation>
+        <translation>बायरन सोकासी द्वारा बनाया गया कार्यक्रम, मैं 10 इंच के लायक हूं</translation>
     </message>
     <message>
         <location filename="imc.ui" line="236"/>
         <source>CALCULAR</source>
-        <translation type="unfinished"></translation>
+        <translation>calculate</translation>
     </message>
     <message>
         <location filename="imc.ui" line="245"/>
         <source>Calculos</source>
-        <translation type="unfinished"></translation>
+        <translation>गणना</translation>
     </message>
     <message>
         <location filename="imc.ui" line="251"/>
         <source>DATOS</source>
-        <translation type="unfinished"></translation>
+        <translation>आंकड़े</translation>
     </message>
     <message>
         <location filename="imc.ui" line="261"/>
         <location filename="imc.ui" line="319"/>
         <location filename="imc.ui" line="336"/>
         <source>0.0 Kg</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="imc.ui" line="274"/>
         <source>IMC  kg/m</source>
-        <translation type="unfinished"></translation>
+        <translation>बीएमआई किग्रा / मी</translation>
     </message>
     <message>
         <location filename="imc.ui" line="288"/>
         <source>0.0 </source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="imc.ui" line="301"/>
         <source>PESO MINIMO</source>
-        <translation type="unfinished"></translation>
+        <translation>न्यूनतम वजन</translation>
     </message>
     <message>
         <location filename="imc.ui" line="308"/>
         <source>ACTUAL</source>
-        <translation type="unfinished"></translation>
+        <translation>वर्तमान</translation>
     </message>
     <message>
         <location filename="imc.ui" line="349"/>
         <source>PESO MAXIMO</source>
-        <translation type="unfinished"></translation>
+        <translation>अधिकतम वजन</translation>
     </message>
     <message>
         <location filename="imc.ui" line="356"/>
         <source>INDICE DE MASA CORPORAL</source>
-        <translation type="unfinished"></translation>
+        <translation>बॉडी मास इंडेक्स</translation>
     </message>
     <message>
         <location filename="imc.ui" line="401"/>
         <source>Comparaciones</source>
-        <translation type="unfinished"></translation>
+        <translation>तुलना</translation>
     </message>
     <message>
         <location filename="imc.ui" line="427"/>
         <source>INFORMACION DEL USUARIO </source>
-        <translation type="unfinished"></translation>
+        <translation>यूजर जानकारी</translation>
     </message>
     <message>
         <location filename="imc.ui" line="444"/>
@@ -115,7 +115,10 @@ p, li { white-space: pre-wrap; }
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-style:italic; color:#ff0000;&quot;&gt;Intento de programa &lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-style:italic; color:#ff0000;&quot;&gt;No me prepare lo suficiente para esto &lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-style:italic; color:#ff0000;&quot;&gt;Pero hize mi mayor esfuerzo &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>मेरे कार्यक्रम का उपयोग करने के लिए धन्यवाद।
+कार्यक्रम का इरादा
+मैंने इसके लिए पर्याप्त तैयारी नहीं की
+लेकिन मैंने अपना सर्वश्रेष्ठ किया</translation>
     </message>
 </context>
 </TS>
