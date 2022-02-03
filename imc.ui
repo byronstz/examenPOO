@@ -6,16 +6,16 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>620</width>
+    <width>618</width>
     <height>615</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>IMC</string>
+   <string>Calculadora IMC</string>
   </property>
   <property name="windowIcon">
-   <iconset>
-    <normaloff>recursos/pesas.png</normaloff>recursos/pesas.png</iconset>
+   <iconset resource="recursos.qrc">
+    <normaloff>:/new/prefix1/recursos/pesas.png</normaloff>:/new/prefix1/recursos/pesas.png</iconset>
   </property>
   <property name="iconSize">
    <size>
@@ -543,19 +543,6 @@ color: rgb(0, 0, 0);</string>
              </layout>
             </widget>
            </item>
-           <item row="0" column="0" rowspan="2">
-            <spacer name="horizontalSpacer">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>40</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
           </layout>
          </widget>
         </item>
@@ -646,13 +633,15 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>620</width>
+     <width>618</width>
      <height>25</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
  <connections/>
 </ui>

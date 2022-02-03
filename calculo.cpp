@@ -35,13 +35,13 @@ void calcularIndice::calcular()
         m_imcdu = m_pesodu / (pow(m_alturadu,2));
 
         if(m_imcdu >= 0 && m_imcdu <18.5){
-            m_resultab = "Peso muy bajo debes comer mas";
+            m_resultab = "Peso muy bajo...debes comer mas";
         }else if(m_imcdu >= 18.5 && m_imcdu <= 24.9){
             m_resultab = "Peso normal...muy bien";
         }else if(m_imcdu >= 25 && m_imcdu <= 29.9){
-            m_resultab = "Peso demasiado,haga ejercicio";
+            m_resultab = "Pesas demasiado,haz ejercicio";
         }else if(m_imcdu >= 30){
-            m_resultab = "Tiene Sobrepeso";
+            m_resultab = "Tiene Sobrepeso :( ";
         }
     }
 }
@@ -56,9 +56,9 @@ calcularIndice::calcularIndice(QObject *parent) : QObject(parent)
         }else if(m_imcdu >= 18.5 && m_imcdu <= 24.9){
             m_resultab = "Peso normal...muy bien";
         }else if(m_imcdu >= 25 && m_imcdu <= 29.9){
-            m_resultab = "Peso demasiado, haga ejercicio";
+            m_resultab = "Pesas demasiado, haz ejercicio";
         }else if(m_imcdu >= 30){
-            m_resultab = "Tiene Sobrepeso";
+            m_resultab = "Tiene Sobrepeso :( ";
         }
 
     }
