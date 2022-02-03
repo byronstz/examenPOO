@@ -21,7 +21,7 @@ public:
 
 private slots:
 
-    void on_btnCalcular_click();
+    void on_btnCalcular_clicked();
 
 private:
     Ui::IMC *ui;

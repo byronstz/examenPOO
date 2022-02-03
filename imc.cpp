@@ -65,7 +65,7 @@ void IMC::almcnr()
 //salida de datos en la grafica
 void IMC::iniciDat()
 {
-    QStringList cabecera = {"datos"};
+    QStringList cabecera = {"Fecha. Actual ", "Peso. Kg", "Altura .M ,Cm ", "'I.M.C'"};
     ui->outRegistro->setColumnCount(4);
     ui->outRegistro->setHorizontalHeaderLabels(cabecera);
 }
@@ -104,7 +104,7 @@ void IMC::abrD()
     }
     file.close();
 }
-void IMC::on_btnCalcular_click()
+void IMC::on_btnCalcular_clicked()
 {
     float peso = ui->inPeso->value();
     float altura = ui->inAltura->value();
