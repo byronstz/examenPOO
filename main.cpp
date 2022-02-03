@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
                                idiomas);
     // Dependiendo del idioma seleccionado, carga el archivo de rtaducción
     if (idiomaSeleccionado == "Hindi"){
-        traducion.load(":/IMC_hi.qm");
+        traducion.load(":/new/prefix1/IMC_hi.qm");
     }
     // Si es diferente de español, se instala la traducción en TODA la aplicación
     if (idiomaSeleccionado != "Español"){
